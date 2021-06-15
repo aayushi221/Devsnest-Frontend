@@ -1,0 +1,79 @@
+DAY 6:
+Question 1: Write a JavaScript function to check whether an `input` is an array or not
+Answer 1: function is_array(testInput) {
+  return Array.isArray(testInput);
+}
+console.log(is_array("w3resource"));
+console.log(is_array([1, 2, 4, 0]));
+console.log(is_array({ a: "123" }));
+ 
+ 
+ 
+ 
+Question 2:  Write a JavaScript function to clone an array
+Answer 2: console.log(array_Clone([1,2,4,0]));
+console.log(array_Clone([1,2,[4,0]]));
+ 
+function array_Clone(args){
+  let arrCopy = args;
+  return arrCopy;
+}
+ 
+ 
+ 
+Question 3:  Write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array.
+Answer 3: function first(args){
+  if (args==[])
+  return []
+  var i;
+  for (i = 0; i < args.length; i++) {
+  var text = args[0];
+}
+return text;
+}
+ 
+ 
+Question 4:  Write a simple JavaScript program to join all elements of the following array into a string.
+Answer 4: function   concatString(test){
+    let myStr1 = '', myStr2 = '';
+    for(let i =0; i<test.length;i++){
+        myStr1 += test[i];
+        myStr2 += test[i];
+        if (i!=test.length-1){
+            myStr1 +=',';
+            myStr2 += '+';
+        }
+ 
+    }
+    myStr1 = test.join(',');
+    myStr2 = test.join('+');
+    return [myStr1,myStr2];
+}
+let myColor = ["Red", "Green", "White", "Black"]
+let ans = concatString(myColor)
+console.log(ans)
+console.log(ans[0])
+console.log(ans[1])
+ 
+ 
+Question 5: Write a JavaScript program to find the most frequent item of an array
+Answer 5: 
+var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+var mf = 1;
+var m = 0;
+var item;
+for (var i=0; i<arr1.length; i++)
+{
+        for (var j=i; j<arr1.length; j++)
+        {
+                if (arr1[i] == arr1[j])
+                 m++;
+                if (mf<m)
+                {
+                  mf=m; 
+                  item = arr1[i];
+                }
+        }
+        m=0;
+}
+console.log(item+" ( " +mf +" times ) ") ;
