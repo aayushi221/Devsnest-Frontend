@@ -1,0 +1,47 @@
+body {
+  height: auto;
+  width: 50vw;
+  margin: 35%;
+  margin-top: 5%;
+}
+.container {
+  height: 400px;
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . .";
+}
+.square {
+  height: 20px;
+  width: 20px;
+  border: 1px solid rgb(202, 87, 87);
+  margin: 0px;
+  background: rgb(223, 53, 53);
+}
+
+.square:hover {
+  background: #ee5e4e;
+}
