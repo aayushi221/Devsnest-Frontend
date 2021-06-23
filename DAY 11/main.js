@@ -4,8 +4,20 @@ const questions = [
     options: ["Satoshi Nakamoto", "Elon musk", "Jeff Bezos", "Kim Jong-un"],
   },
   {
-    question: "when was bitcoin created ?",
-    options: ["2009", "2011", "2010", "2008"],
+    question: "Which one is the first search engine in internet ?",
+    options: ["Archie", "Google", "Altavista", "WAIS"],
+  },
+  {
+    question: "Number of bit used by the IPv6 address?",
+    options: ["128bit", "32bit", "64bit", "256bit"],
+  },
+  {
+    question: "Which one is the first search engine in internet ?",
+    options: ["Archie", "Google", "Altavista", "WAIS"],
+  },
+  {
+    question: " Which one is the first web browser invented in 1990 ?",
+    options: ["Nexus", "Mozilla", "Mosaic", "Internet Explorer"],
   },
 ];
 
