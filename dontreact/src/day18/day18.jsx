@@ -1,6 +1,7 @@
-import day18 from "./day18.css";
+import React from 'react';
+import "./day18.css";
 
-function App() {
+const Day18 = () => {
     let arr = new Array(64).fill(true);
     let toggle_i = false,
       toggle_j,
@@ -32,4 +33,4 @@ function App() {
     );
   }
   
-  export default App;
+  export default Day18;
