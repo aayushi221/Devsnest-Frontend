@@ -3,6 +3,8 @@ import "./App.css";
 import Day17 from "./day17/day17";
 import Day18 from "./day18/day18";
 import Day19 from "./day19/day19";
+import Day20 from "./day20/day20";
+
 function App() {
   return (
     <Router>
@@ -16,10 +18,10 @@ function App() {
         <Route exact path="/day19">
           <Day19 />
         </Route>
-        {/* <Route exact path="/day16">
-          <Day16 />
+        <Route exact path="/day20">
+          <Day20 />
         </Route>
-        <Route exact path="/day16">
+        {/* <Route exact path="/day16">
           <Day16 />
         </Route> */}
       </Switch>
