@@ -30,8 +30,8 @@
 
 It's just me✨✨:
 
-<a href="https://github.com/techakhil-me/whiteboard/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=techakhil-me/whiteboard" />
+<a href="https://github.com/aayushi221">
+  <img src="https://avatars.githubusercontent.com/u/60283749?v=4" />
 </a>
 
 <hr>
