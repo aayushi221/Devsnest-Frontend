@@ -1,6 +1,6 @@
 import './styles.css';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 function AddItemForm({ addItem }) {
 	const [title, setTitle] = useState('');
@@ -102,7 +102,7 @@ function RenderItem({ updateItem, removeItem, item, index }) {
 	);
 }
 
-function App() {
+export default Day21()  {
 	const [items, setItems] = useState([]);
 
 	const updateItem = (index, newItem) => {
@@ -139,4 +139,3 @@ function App() {
 	);
 }
 
-export default App;
