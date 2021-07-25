@@ -1,4 +1,4 @@
-import './styles.css';
+import './day21.css';
 
 import React, { useState } from 'react';
 
@@ -102,7 +102,7 @@ function RenderItem({ updateItem, removeItem, item, index }) {
 	);
 }
 
-export default Day21()  {
+function Day21() {
 	const [items, setItems] = useState([]);
 
 	const updateItem = (index, newItem) => {
@@ -139,3 +139,4 @@ export default Day21()  {
 	);
 }
 
+export default Day21;

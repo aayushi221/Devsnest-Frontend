@@ -4,7 +4,7 @@ import Day18 from "./day18/day18";
 import Day19 from "./day19/day19";
 import Day20 from "./day20/day20";
 import Day21 from "./day21/day21";
-// import Day22 from "./day22/day22";
+import Day22 from "./day22/day22";
 
 
 
@@ -27,9 +27,9 @@ function App() {
         <Route exact path="/day21">
           <Day21 />
         </Route>
-        {/* <Route exact path="/day22">
+        <Route exact path="/day22">
           <Day22 />
-        </Route> */}
+        </Route>
       </Switch>
     </Router>
   );
