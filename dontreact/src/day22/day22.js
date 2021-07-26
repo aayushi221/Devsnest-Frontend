@@ -1,6 +1,7 @@
 
 import React, {useState, useEffect} from 'react';
-
+import Template from './templates';
+import Meme from './Meme';
 import './day22.css';
 
 
@@ -12,19 +13,16 @@ function Day22(){
         .then((res) => res.json())
         .then((data) => {
             setTemplates(data.data.memes);
-            console.log(data.data.memes);
         });
     }, []);
     return (
         <div className="Appy ">
             <h1>Meme Generator</h1>
-            {templates.map(template =>(
-               <div key={template.id} className="template">
-                   
-                   <div style = {{backgroundImage: `url(${template.url})`}} className="image">
-                   </div>
-               </div> 
-            ))}
+            {meme === null ? (
+            <Template templates={templates} setMeme = {setMeme} />
+                ) : ( 
+                <Meme meme= {meme} setMeme={setMeme}/>
+                )} 
         </div>
     )
 }
