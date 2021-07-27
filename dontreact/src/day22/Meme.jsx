@@ -5,13 +5,20 @@ const Meme = ({meme, setMeme}) => {
     // console.log(meme);
     const [form, setForm] = useState({
         template_id: meme.id,
-        username:"AayushiPandey",
-        password:"7z3QXMN2u@AZeKU",
+        username:"generatingmemes",
+        password:"justagenericpass",
         boxes: [],
     
     });
     const generateMeme = () => {
-        console.log(form);
+        let url = "https://api.imgflip.com/caption_image?template_id = ${form.template_id}&username=${form.username}&password=${form.password}";
+        form.boxes.map( (box, index) => {
+           url += `&boxes[${index}][text] = ${box.text}`; 
+        });
+        fetch(url).then((res) => res.json())
+        .then(data => {
+            setMeme({...meme, url: data.data.url})
+        });
     };
  return ( 
      <div className= "meme">
