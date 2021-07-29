@@ -40,6 +40,7 @@ function App() {
         </Route>
         <Route exact path="/day23">
           <Day23 />
+          {/* used different hooks */}
         </Route>
       </Switch>
     </Router>

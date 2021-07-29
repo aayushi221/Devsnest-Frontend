@@ -1,6 +1,11 @@
-function Day23() {
-    return( <h1> hi</h1>)
+import React from 'react'
+
+const Day23 = () => {
+    return (
+        <div>
+            <h1>chal rha bhai?</h1>
+        </div>
+    )
 }
 
-export  default Day23;
-//commentbaaziii
+export default Day23
