@@ -22,6 +22,12 @@
     <li>CSS </li>
     <li>Javascript </li>
     <li>React </li>
+
+<li>Reducers</li>
+
+<li>Redux </li>
+
+
 </ul>
 
 <br>
