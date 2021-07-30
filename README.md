@@ -1,7 +1,7 @@
 <h1 align="center">Introduction 👩🏻‍💻👨🏻‍💻 </h1>
 
 
-<p align="center"> <strong>These are my Devsnest Front-end THAs</strong></p>
+<p align="center"> <strong>These are my Devsnest Front-end THAs. It mostly consists of small projects implementing front-end related tech stacks.</strong></p>
 
 <br>
 <br>
