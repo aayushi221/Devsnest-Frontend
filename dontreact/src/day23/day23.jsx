@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import useFetch from '../Hooks/useFetch';
+import './day23.css';
 
 const Day23 = () => {
     const [data] = useFetch(`https://jsonplaceholder.typicode.com/todos/5`)
@@ -16,3 +17,4 @@ const Day23 = () => {
 }
 
 export default Day23
+ 
