@@ -6,8 +6,7 @@ import Day20 from "./day20/day20";
 import Day21 from "./day21/day21";
 import Day22 from "./day22/day22";
 import Day23 from "./day23/day23";
-
-
+import Day24 from "./day24/day24";
 
 
 function App() {
@@ -40,6 +39,10 @@ function App() {
         </Route>
         <Route exact path="/day23">
           <Day23 />
+          {/* used different hooks */}
+        </Route>
+        <Route exact path="/day24">
+          <Day24 />
           {/* used different hooks */}
         </Route>
       </Switch>
