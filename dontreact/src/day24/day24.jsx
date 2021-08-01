@@ -15,32 +15,44 @@ const Day24 = () => {
                 </div>
                 <Switch>
                     <Route exact path={`/`}>
-                        <div>
+                        <h1>
                             Home
-                        </div>
+                        </h1>
                     </Route>
                     <Route exact path={`/dashboard`}>
                         {
-                            (login === true) ? <h1>So you finally logged in and reached the Dashboard! So the thing is you gotta check your profile xD</h1> : <Redirect to={"/"}/>
+                            (login === true) ? <h1>So you finally logged in and reached the Dashboard! So the thing is you gotta check your profile xD</h1> :<Redirect to={"/"}/>
                         }
                         
                     </Route>
-                    <Route exact path={`/profiles`}>
+                    <Route exact path={`/profile`}>
                         {
-                            (login === true) ? <h1>So made it to the profile page! So proud of you. Now thanks for your attention but it was just a basic build up text. If you angry, then kalm. </h1> : <Redirect to={"/"} />;
+                           (login === true) ? <h1>So made it to the profile page! So proud of you. Now thanks for your attention but it was just a basic build up text. If you angry, then kalm. </h1> : <Redirect to={"/"} />
                         }
                     </Route>
                     <Route path={`/about`}>
                         <h1>About</h1>
                     </Route>
-                    <Route path={`/`}>
+                    {/* <Route path={`/`}>
                         <h1>404</h1>
-                    </Route>
+                    </Route> */}
                 </Switch>
                 <div>
                     {
                             (login === true) ? <h1>You're logged in. Go to the dashboard first and then to the profile </h1> : <div> Nuu not logged in.</div>
                     }
+                     <div>
+            <button onClick={() => {
+                if (login === false)
+                setLogin(true);
+                else
+                setLogin(false);
+            }} >
+                {
+                (login === true) ? "Logout" : "Login"
+                }
+                </button>
+        </div>
                 </div>
             </HashRouter>
         </div>
