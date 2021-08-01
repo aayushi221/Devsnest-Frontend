@@ -43,7 +43,7 @@ function App() {
         </Route>
         <Route exact path="/day24">
           <Day24 />
-          {/* used different hooks */}
+          {/* learned about links, routers and redirection */}
         </Route>
       </Switch>
     </Router>
