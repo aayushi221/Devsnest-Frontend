@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './day24.css';
 
 const Day24 = () => {
     return (
@@ -8,4 +9,4 @@ const Day24 = () => {
     )
 }
 
-export default Day24
+export default Day24;
